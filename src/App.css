@@ -1,42 +1,119 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+    text-shadow: #000 1px 1px;
+    font-family: Helvetica, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container {
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border: 2px sold rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 10px;
 }
 
-.card {
-  padding: 2em;
+.container h1{
+    text-align: center;
+    font-size: 35px;
+    font-display: bold;
+    color: white;
 }
 
-.read-the-docs {
-  color: #888;
+.container h2{
+    text-align: center;
+    font-size: 20px;
+    font-display: bold;
+    color: white;
 }
+
+.container .input-field {
+    position: relative;
+    height: 50px;
+    margin: 15px auto;
+}
+
+.input-field input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 15px;
+    color: white;
+    padding: 20px 25px;
+}
+
+.input-field input::placeholder {
+    color: white;
+}
+
+.input-field .icon{
+    position: absolute;
+    right: 25px;
+    top: 35%;
+    transform: translate(-50%);
+    font-size: 18px;
+    color: white;
+}
+
+.container .recall-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+}
+
+.recall-forget label{
+    color: white;
+}
+
+.recall-forget input{
+    margin-right: 5px;
+}
+
+.recall-forget a, .signup-link p a{
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.recall-forget a:hover, .signup-link p a:hover{
+    text-decoration: underline;
+}
+
+.container button{
+    width: 100%;
+    height: 50px;
+    background-color: white; 
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(240, 226, 226, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    font-weight: 800;
+    text-shadow: none;
+}
+
+
